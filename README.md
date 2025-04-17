@@ -31,6 +31,6 @@
 ### 6 . Confirm page
 ![Confirm Page](screenshots/confirm.png)
 ### 7 .  Profile page
-![Profile Page](screenshots/Profile.png)
+![Profile Page](screenshots/userprofile.png)
 
 
