@@ -1,25 +1,34 @@
+import { Link } from "react-router-dom";
+
 function Success() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-8 rounded-lg shadow-lg w-full max-w-lg relative">
-        {/* Ticket graphic background */}
-        <div className="absolute inset-0 bg-white opacity-20 rounded-lg -z-10"></div>
+    <div className="flex flex-col min-h-screen">
+   
+      
 
-        <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-bold text-white mb-4">Payment Successful!</h1>
-          <div className="w-full bg-white py-6 px-8 rounded-lg shadow-md border-4 border-yellow-300 relative">
-            {/* Ticket design border */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-yellow-500 rounded-t-lg"></div>
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-500 rounded-b-lg"></div>
-
-            <p className="text-center text-xl text-gray-800 mb-6">Your payment was successfully processed. Thank you for your purchase!</p>
-
-            <div className="bg-blue-600 text-white px-6 py-2 rounded-full w-full text-center font-semibold">
+      {/* Main Content */}
+      <main
+        className="flex-grow flex items-center justify-center bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/bus3.png')" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="relative z-10 text-center px-8 py-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-2xl max-w-md w-full">
+          <h1 className="text-4xl font-bold mb-4 text-green-400">
+            Payment Successful!
+          </h1>
+          <p className="text-white text-lg mb-6">
+            Your payment was successfully processed. Thank you for your purchase!
+          </p>
+          <Link to="/">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-full transition duration-200">
               Back to Home
-            </div>
-          </div>
+            </button>
+          </Link>
         </div>
-      </div>
+      </main>
+
+      {/* Footer */}
+   
     </div>
   );
 }
