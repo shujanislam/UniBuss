@@ -32,5 +32,10 @@
 ![Confirm Page](screenshots/confirm.png)
 ### 7 .  Profile page
 ![Profile Page](screenshots/userprofile.png)
-
+### 8 . Esewa Payment
+![Esewa](screenshots/paywithesewa.png)
+### 9 . Success
+![success](screenshots/success.png)
+### 10 . Failure
+![failure](screenshots/failure.png)
 
