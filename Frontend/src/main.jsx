@@ -12,6 +12,9 @@ import SeatDetails from './Pages/SeatDetails.jsx'
 import UserProfile from './Pages/UserProfile.jsx'
 import Dev from './Pages/Dev.jsx'
 import { Toaster } from 'react-hot-toast'
+import Payment from './Payment/Payment.jsx'
+import Success from './Payment/Success.jsx'
+import Failure from './Payment/Failure.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -26,6 +29,9 @@ createRoot(document.getElementById('root')).render(
       <Route path='/seat-details/:seatId' element={<SeatDetails/>} />
       <Route path='/profile' element={<UserProfile/>} />
       <Route path='/devinfo' element={<Dev/>} />
+      <Route path='/payment' element={<Payment></Payment>} />
+      <Route path='/success' element={<Success/>} />
+      <Route path='/failure' element={<Failure/>} />
     </Routes>
   </BrowserRouter>
 )
