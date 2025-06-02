@@ -66,7 +66,7 @@ function Addbus() {
 
       if (response.data.success) {
         toast.success("Bus added successfully!");
-        navigate("/", {
+        navigate("/home", {
           state: {
             toast: {
               type: "success",
@@ -215,20 +215,20 @@ function Addbus() {
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-2">Fare</label>
-                <input
-                  type="number"
-                  name="fare"
-                  value={busData.fare}
-                  onChange={handleChange}
-                  required
-                  min="0"
-                  step="0.01"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
-                  placeholder="Enter fare"
-                />
-              </div>
+              {/* <div> */}
+              {/*   <label className="block text-sm font-medium mb-2">Fare</label> */}
+              {/*   <input */}
+              {/*     type="number" */}
+              {/*     name="fare" */}
+              {/*     value={busData.fare} */}
+              {/*     onChange={handleChange} */}
+              {/*     required */}
+              {/*     min="0" */}
+              {/*     step="0.01" */}
+              {/*     className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" */}
+              {/*     placeholder="Enter fare" */}
+              {/*   /> */}
+              {/* </div> */}
 
               <div>
                 <label className="block text-sm font-medium mb-2">Number of Seats</label>

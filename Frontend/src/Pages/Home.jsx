@@ -188,7 +188,7 @@ function Home() {
         >
           <h1 className="text-4xl font-extrabold text-white drop-shadow-lg tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-              Chill BUSES
+              UniBuss 
             </span>
           </h1>
 
@@ -324,7 +324,7 @@ function Home() {
         className="absolute bottom-6 text-center z-10"
       >
         <p className="text-sm text-white/70 font-light tracking-wide">
-          © 1914 Chill. All Rights Reserved.
+          © 2025 UniBuss. All Rights Reserved.
         </p>
       </motion.div>
 

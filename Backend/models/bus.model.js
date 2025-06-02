@@ -22,10 +22,6 @@ const BusSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    fare: {
-      type: Number,
-      required: true,
-    },
     departuretime: {
       type: Date,
       required: true,

@@ -123,7 +123,7 @@ const SeatDetails = () => {
       if (response.data.success) {
         localStorage.removeItem("selectedBusId");
         localStorage.removeItem("selectedSeat");
-        navigate('/payment', { state: { totalAmount: fare } });
+        navigate('/success');
       }
     } catch (error) {
       console.error("Error booking seat:", error);
@@ -170,7 +170,6 @@ const SeatDetails = () => {
                 <p className="text-white/90">Driver: {busInfo?.driver}</p>
                 <p className="text-white/90">Route: {busInfo?.origin} → {busInfo?.destination}</p>
                 <p className="text-white/90">Departure Time: {new Date(busInfo?.departuretime).toLocaleString()}</p>
-                <p className="text-white/90">Fare: NRS {busInfo?.fare}</p>
               </div>
             </div>
 
@@ -218,7 +217,6 @@ const SeatDetails = () => {
                         </div>
 
                         <div className="flex justify-between items-center">
-                          <div className="text-xl font-semibold text-white/90">Total Amount: NRS {busInfo?.fare}</div>
                           <motion.button
                             whileHover={{ scale: 1.02, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)" }}
                             whileTap={{ scale: 0.98 }}

@@ -88,7 +88,7 @@ const Signup = () => {
           className="text-5xl font-extrabold mb-6 text-white drop-shadow-lg tracking-tight"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-            Join Chill BUSES
+            Join UniBuss
           </span>
         </motion.h1>
         
@@ -216,7 +216,7 @@ const Signup = () => {
         className="absolute bottom-6 text-center z-10"
       >
         <p className="text-sm text-white/70 font-light tracking-wide">
-          © 1914 Chill. All Rights Reserved.
+          © 2025 UniBuss. All Rights Reserved.
         </p>
       </motion.div>
 
